@@ -22,24 +22,41 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsT-oa-wLb">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mei-66-q0t">
-                                                <frame key="frameInset" minX="145" minY="261" width="42" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mei-66-q0t">
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.46274509800000002" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="149" id="Lur-SQ-s3R"/>
+                                                    <constraint firstAttribute="width" constant="204" id="khl-iH-ene"/>
+                                                </constraints>
+                                                <string key="text" base64-UTF8="YES">
+U2Nyb2xsIERvd24uIApVSVZpZXcgaW4gEFNjcm9sbHZpZXcgd2l0aCBBdXRvIGxheW91dCBmb3IgeGNv
+ZGUgOC4xIA
+</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blf-yX-7d1">
-                                                <frame key="frameInset" minX="145" minY="700" width="42" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blf-yX-7d1">
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.46274509800000002" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="87" id="FQd-mr-HSd"/>
+                                                    <constraint firstAttribute="width" constant="225" id="cwv-PE-qUJ"/>
+                                                </constraints>
+                                                <string key="text">Scroll Up.
+ This is end of content.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3g-O3-jCD">
-                                                <frame key="frameInset" minX="143" minY="316" width="46" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3g-O3-jCD">
+                                                <color key="backgroundColor" red="0.12941176469999999" green="0.46274509800000002" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="MXO-tG-EcK"/>
+                                                    <constraint firstAttribute="width" constant="204" id="xvg-U9-gKo"/>
+                                                </constraints>
+                                                <state key="normal" title="Click To Share Something">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FKX-w0-FiV"/>
                                                 </connections>
@@ -47,8 +64,14 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="blf-yX-7d1" firstAttribute="top" secondItem="Mei-66-q0t" secondAttribute="bottom" constant="479" id="2ht-Ic-7QX"/>
                                             <constraint firstAttribute="width" constant="375" id="6Xk-Hd-MUz"/>
                                             <constraint firstAttribute="height" constant="859" id="8xN-yz-89j"/>
+                                            <constraint firstItem="Mei-66-q0t" firstAttribute="top" secondItem="p3g-O3-jCD" secondAttribute="bottom" constant="59" id="EeH-r3-VNu"/>
+                                            <constraint firstItem="Mei-66-q0t" firstAttribute="centerX" secondItem="tsT-oa-wLb" secondAttribute="centerX" constant="5.5" id="S9l-Lo-wmA"/>
+                                            <constraint firstItem="p3g-O3-jCD" firstAttribute="top" secondItem="tsT-oa-wLb" secondAttribute="top" constant="33" id="Sf9-al-pBX"/>
+                                            <constraint firstItem="blf-yX-7d1" firstAttribute="centerX" secondItem="tsT-oa-wLb" secondAttribute="centerX" constant="-8" id="Tvj-bK-YGs"/>
+                                            <constraint firstItem="p3g-O3-jCD" firstAttribute="centerX" secondItem="tsT-oa-wLb" secondAttribute="centerX" constant="-0.5" id="dpw-HA-6h0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
